@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Foodies</title>
+<meta charset='utf-8'>
+<meta name='description' content='Description of document content'>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header role='banner'>
+<div id="foodies">
+  <h1>Foodies</h1>
+</div>
+  <nav>
+    <ul role='navigation'>
+      <li>
+        <a href='#menu'>Menu</a>
+      </li>
+      <li>
+        <a href='#orderform'>Make Your Order</a>
+      </li>
+      <li>
+        <a href='#location'>Find Us At</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main role='main'>
+  <h2 id="menu">Our Menu</h2>
+  <ol>
+    <li><h4>Chicken Samosas</h4></li>
+    <p>
+        Crispy wrappers filled with spiced chicken. Served with cilantro dipping sauce. 12.99
+    </p>
+    <img class="img1" src="https://olo-images-live.imgix.net/8c/8c2b367b746a4b75bbac4de2139a79e2.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1200&h=800&fit=fill&fm=png32&bg=transparent&s=77084a8a149bdb525a5e18311ae92cb4"/>
+    <li><h4>Beet and Avocado Salad</h4></li>
+    <p>
+        Glazed beets, avocado, fresh orange, arugula and honey-yogurt sauce. 9.50
+    </p>
+    <img class="img2" src="https://olo-images-live.imgix.net/6a/6ad5add9c96d420aa815000096899d8e.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1200&h=800&fit=fill&fm=png32&bg=transparent&s=a8458d90a3b722344ba38eef703e0e6f"/>
+    <li><h4>Chicken Pot Stickers</h4></li>
+    <p>
+        Asian dumplings pan-fried in the classic tradition. Served with our soy-ginger sesame sauce. 10.99
+    </p>
+    <img class="img3" src="https://olo-images-live.imgix.net/c8/c8bcf01491b8477f9d344ca596e528f0.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=1200&h=800&fit=fill&fm=png32&bg=transparent&s=73bba70cb6d47073892fa59692e125c2"/>
+  </ol>
+  
+<!-- Add your restaurant order form below -->
+<div class="form">
+  <h2 id="orderform">Order</h2>
+  <form role='order_form'>
+    <label for="order">What's your craving today?</label><br/>
+    <select id="order" name="order">
+        <option value="ChickenSamosas">Chicken Samosas</option>
+        <option value="BeetAndAvocadoSalad">Beet and Avocado Salad</option>
+        <option value="ChickenPotStickers">Chicken Pot Stickers</option>
+    </select><br/><br/>
+    
+    <label for="accountcheck">Do you already have an account?</label><br/>
+    <input id="accountcheck" name="yes" type="checkbox" value="accountcheck">
+    <label for="accountcheck">Yes</label>
+    <input id="accountcheck" name="no" type="checkbox" value="accountcheck">
+    <label for="accountcheck">No</label><br/>
+
+    <h3>Create an Account</h3>
+    <label for="fullname">Insert your full name</label><br/>
+    <input id="fullname" name="fullname" type="text"><br/>
+
+    <label for="address">Address</label><br/>
+    <input id="address" name="address" type="text"><br/>
+
+    <label for="zipcode">Zip Code</label><br/>
+    <input id="zipcode" name="zipcode" type="text" required pattern="[0-9]{5}"><br/>
+
+    <label for="city">City</label><br/>
+    <input id="city" name="city" type="text"><br/>
+
+    <label for="state">State</label><br/>
+    <input id="state" name="state" type="text"><br/>
+
+    <label for="phonenumber">Phone Number (no spaces)</label><br/>
+    <input id="phonenumber" name="phonenumber" type="text" required pattern="[0-9]{10}"><br/>
+
+    <label for="email">E-Mail Address</label><br/>
+    <input id="email" name="email" type="text"><br/>
+
+    <h3>Payment Information</h3>
+    <label for="cardnumber">Card Number (no spaces)</label><br/>
+    <input id="cardnumber" namee="cardnumber" type="text" required pattern="[0-9]{14,16}"><br/>
+
+    <label for="cardexpiration">Card Expiration Date</label><br/>
+    <input id="cardexpiration" name="cardexpiration" type="text"><br/>
+
+    <label for="3digitcode">3 Digit Security Code</label><br/>
+    <input id="3digitcode" name="3digitcode" type="text" minlength="3" maxlength="3"><br/>
+
+    <input type='submit' value='order'>
+  </form>
+</div>
+<!-- Add your restaurant order form above -->
+</main>
+
+<footer role='Location'>
+  <h2 id="location">Find Us At</h2>
+  <p>5530 Glades Road, Boca Raton, FL 33431</p>
+</footer>
+
+</body>
+</html>

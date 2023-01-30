@@ -1,0 +1,37 @@
+#foodies {
+    background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline dotted tomato;
+    color: bisque;
+    -webkit-text-stroke: 1px black;
+    padding: 100px;
+}
+
+* {
+    font-family: monospace;
+    background-color: bisque;
+}
+
+.img1 {
+    height: 90px;
+    width: 110px;
+    float: right;
+}
+
+.img2 {
+    height: 90px;
+    width: 110px;
+    float: right;
+}
+
+.img3 {
+    height: 90px;
+    width: 110px;
+    float: right;
+}
+
